@@ -1,0 +1,211 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+/* Navbar Section */
+nav{
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+}
+
+.logo{
+    width: 60px;
+}
+
+.logo img{
+    height: 50px;
+    width: auto;
+    opacity: 0.7;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.links{
+    position: relative;
+    bottom: 55px;
+    float: right;
+
+}
+
+.links h3{
+    display: inline-block;
+    margin-right: 15px;
+    font-family: Helvetica, sans-serif;
+    color: rgba(194, 192, 191, 0.8);
+    font-weight: 600;
+    text-decoration: underline;
+    
+    
+}
+
+/* Mission Section */
+
+.mission{
+    
+    position: relative;
+    z-index: -1;
+    top: 60px;
+    
+    
+}
+#mission-banner{
+    height: 700px;
+    width: 1200px;
+    padding-left: 4.5%;
+    
+       
+}
+.mission-block{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 400px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    margin: auto;
+    height: 40px;
+    
+}
+
+.mission-block.mission-header{
+    position:static;
+    padding-top: 10px;
+}
+
+.mission-block.mission-text{
+    position: static;
+    padding-bottom: 5px;
+    line-height: 50px;
+}
+
+/* Tea of the Month Section */
+
+.month{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header{
+    font-family: Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.89);
+    text-align: center;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.month-img{
+    width: 90%;
+    height:auto;
+    margin-left: 100px;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.picture{
+    height: 200px;
+    width: 300px;
+    margin: 15px 5px;
+    
+    
+}
+
+figcaption{
+    color:aliceblue;
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: -10px;
+}
+
+/* Locations */
+
+.locations{
+    position: relative;
+    
+    margin-left: 110px;
+    
+}
+
+#background-locations{
+    position: absolute;
+    height: 500px;
+    width: 90%;
+    z-index: -1;
+    
+    
+    
+   
+}
+
+#location-h2{
+    position: absolute;
+    left: 39%;
+    color:rgb(189, 192, 192);
+    padding-top: 60px;
+    
+}
+
+
+
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    margin-top: 116px;
+    margin-left: 40px;
+    
+    
+    
+
+
+}
+
+.text{
+    color:aliceblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10%;
+}
+
+#first{
+    margin-left: 70px;
+}
+
+
+/* Footer Section */
+
+.footer{
+    height: 200px;
+    margin-top: -36px;
+}
+
+h2.text{
+    margin-top: 120px;
+    padding-top: 0;
+    
+}
+
+.footer .text{
+    padding-top: 10px;
+}
+
+#copy{
+    float: left;
+    padding-top: 0;
+    margin-left: 20px;
+    font-weight: bold;
+}

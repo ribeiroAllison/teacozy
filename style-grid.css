@@ -1,0 +1,378 @@
+/* GENERAL SECTION */
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: black;
+    
+                
+}
+
+.grid{
+    display: grid;
+    max-width: 100%;
+    position: relative;
+    margin:auto;
+    grid-template: 6.9rem 70rem 0.4fr 0.7fr 0.1fr 0.1fr / 4.5rem 13rem 77rem 14rem 11rem 4.5rem;
+    grid-template-areas: 
+    "nav nav nav nav nav nav"
+    ". mission mission mission mission . "
+    ". month month month month ."
+    ". locations locations locations locations ."
+    ". . footer footer . . "
+    "copyright copyright copyright . . .";
+    gap: 1rem;
+    justify-content: center;
+
+     
+
+}
+
+h2{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:antiquewhite;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:antiquewhite;
+
+}
+
+h4, figcaption, p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:antiquewhite;
+}
+
+h5{
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:antiquewhite;
+}
+
+p{
+    font-weight: 400;
+}
+
+
+/* NAV SECTION */
+nav{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid seashell;
+    grid-area: nav;
+}
+
+.logo img{
+    height: 5rem;
+    margin-left: 1rem;
+    
+}
+
+.links{
+    display: flex;
+    float: right;
+    justify-self: end;
+    margin-right: 5%;
+    
+    
+    
+}
+
+.links a{
+    margin: 0.5rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(194, 194, 194);
+    
+    
+}
+
+/* BANNER SECTION */
+
+.mission{
+    display: grid;
+    grid-template: repeat(10, 1fr) / 20% 1fr 20%;
+    width: auto;
+    height: 70rem;
+    align-content: center;
+    justify-content: center;
+    grid-area: mission;
+    overflow: hidden;
+    
+}
+
+#mission-banner{
+    grid-column: 2 / 3;
+    grid-row: 1 / 11;
+}
+
+.mission-block{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    justify-self: center;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    align-self: center;
+
+}
+
+
+/* MONTH SECTION */
+
+.month{
+    
+    grid-area: month;
+    text-align: center;
+}
+
+.month img{
+    width: 30rem;
+    height: 20rem;
+    
+}
+
+.header h4{
+    margin: 0;
+}
+
+.header h2{
+    margin-bottom: -4.5rem;
+}
+.month-img{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figcaption{
+    margin-top: 1rem;
+}
+
+
+/* LOCATION SECTION */
+
+.locations{
+    grid-area: locations;
+    text-align: center;
+    position: relative;
+    display: grid;
+    grid-template: 8.5rem 1.5rem 30rem 10rem / 9% 30rem 4rem 30rem 4rem 30rem 8%;
+    overflow: hidden;
+    height: 50rem;
+    width: 118rem;
+    
+}
+
+#background-locations{
+    grid-area: 1 / 1 / 5 / 8;
+    z-index: -5;
+   
+    
+}
+
+.container{
+    background-color: black;
+    width: 30rem;
+    height: 30rem;
+    color:antiquewhite;
+    
+   
+    
+}
+
+.text{
+    line-height: 4.5rem;
+}
+
+.header{
+    grid-area: 1 / 4 / 2 / 5;
+    justify-self: center;
+    line-height: 10rem;
+}
+
+.one{
+    grid-area: 3 / 2 / 4 / 3 ;
+}
+
+.two{
+    grid-area: 3 / 4 / 4 / 5 ;
+
+}
+
+.three{
+    grid-area: 3 / 6 / 4 / 7 ;
+
+}
+
+
+/* FOOTER SECTION */
+
+.footer{
+    grid-area: footer;
+    justify-self: center;
+    text-align: center;
+    margin-top: 0;
+}
+
+.copyright{
+    grid-area: copyright;
+    color: white;
+}
+
+/* RESPONSIVE SITE ADJUSTS */
+
+@media only screen and (max-width: 480px){
+
+
+
+    nav{
+        max-width: 99%;
+    }
+    
+
+    nav h3{
+        font-size: 1.7rem;
+        
+    }
+
+   
+
+    .links{
+        display: block;
+        margin-right: 0.5rem;
+    }
+
+    .links a{
+        margin: 0;
+        
+       
+    }
+
+    
+
+    
+
+   
+
+    .grid{
+        grid-template: 11rem 30rem 180rem 2fr 0.1fr 0.1fr / 4% 10% 62% 11% 9% 4%;
+    grid-template-areas: 
+    "nav nav nav nav nav nav"
+    ". mission mission mission mission . "
+    ". month month month month ."
+    ". locations locations locations locations ."
+    ". . footer footer . . "
+    ". copyright copyright . . .";
+    }
+
+    .mission{
+        height: 32rem;
+    }
+
+    #mission-banner{
+        width: 482px;
+        
+    }
+
+   .mission-block{
+
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    height: 60.933px;
+    align-items: center;
+    
+}
+
+.mission-block h2{
+    font-size: 2.5rem;
+    padding-left: 4.8rem;
+}
+
+.mission-block h4{
+    font-size: 1.2rem;
+    padding-right: 6.6rem;
+}
+
+.month{
+    max-width: 40rem;
+}
+
+.month-img{
+
+    width: 100%;
+    height: 150rem;
+    justify-self: center;
+    
+
+
+}
+
+.month-img img{
+    display: block;
+    height: auto;
+    width: 120%;
+    padding-top: 2rem;
+    margin-left: -10%;
+    
+}
+
+figure{
+    height: auto;
+    width: 100%;
+   
+}
+
+figcaption{
+    font-size: 3rem;
+}
+
+.locations{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid seashell;
+    margin-top: 6.8rem;
+    background-image: url(./resources/images/img-locations-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+#background-locations{
+    display: none;
+}
+
+.locations .container {
+    border: 1px dotted seashell;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+.copyright p{
+
+    font-size: 1.5rem;
+}
+
+}
